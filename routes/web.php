@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'BlogController@showLis')->name('blogs');
+Route::get('/', 'BlogController@showList')->name('blogs');
