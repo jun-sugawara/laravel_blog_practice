@@ -13,7 +13,7 @@ class BlogFactory extends Factory
      * @return array
      */
     protected $model = Blog::class;
-    
+
     public function definition()
     {
         return [
