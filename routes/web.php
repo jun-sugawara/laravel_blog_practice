@@ -14,3 +14,4 @@
 */
 
 Route::get('/', 'App\Http\Controllers\BlogController@showList')->name('blogs');
+Route::get('/blog/{id}', 'App\Http\Controllers\BlogController@showDetail')->name('show');
