@@ -38,4 +38,16 @@ class BlogController extends Controller
     {
         return view('blog.form');
     }
+
+    // ブログを登録する
+    // @return view    
+    public function exeStore(Request $request)
+    {
+        // ブログのデータを受け取る
+        $inputs = $request->all();
+        // ブログを登録
+        Blog::create($inputs);
+        \Session::flash('err_msg', 'ブログを登録しました。');
+        return redirect(route('blogs'));
+    }
 }
