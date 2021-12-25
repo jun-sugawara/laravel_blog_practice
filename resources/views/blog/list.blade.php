@@ -30,6 +30,7 @@
               <td>
                 <button type="submit" class="btn btn-primary" onclick=>削除</button>
               </td>
+              </form>
           </tr>
           @endforeach
       </table>
